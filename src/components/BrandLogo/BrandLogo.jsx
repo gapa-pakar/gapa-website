@@ -1,0 +1,35 @@
+
+import React from 'react'
+import Brand1 from '../../assets/Symbols/1.avif'
+import Brand2 from '../../assets/Symbols/2.avif'
+import Brand3 from '../../assets/Symbols/3.avif'
+import Brand4 from '../../assets/Symbols/4.avif'
+import Brand5 from '../../assets/Symbols/5.avif'
+import Brand6 from '../../assets/Symbols/6.avif'
+import Brand7 from '../../assets/Symbols/7.avif'
+import Brand8 from '../../assets/Symbols/8.avif'
+
+export default function BrandLogo() {
+    return (
+        <>
+            <div className='dark:bg-gray-900 dark:text-white sm:mt-0 lg:mt-10'>
+                <div className='container py-12'>
+                    <h1 data-aos="fade-up" className='text-center font-bold'>מכינים תוצרים לכלל החטיבה</h1>
+                    <div data-aos="fade-up"
+                    data-aos-delay="300"
+                    className='flex flex-wrap items-center 
+                    justify-center gap-3 py-6 md:px-32'>
+                        <img src={Brand1} alt="" className='w-10' />
+                        <img src={Brand2} alt="" className='w-10' />
+                        <img src={Brand3} alt="" className='w-10' />
+                        <img src={Brand4} alt="" className='w-10' />
+                        <img src={Brand5} alt="" className='w-10' />
+                        <img src={Brand6} alt="" className='w-10' />
+                        <img src={Brand7} alt="" className='w-10' />
+                        <img src={Brand8} alt="" className='w-6' />
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
