@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react'
 import HomePage from './components/HomePage';
 import ErrorComponent from './components/ErrorComponent';
 import About from './components/About';
+import Projects from './components/Projects'
+import Contact from './components/Contact';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -10,8 +12,9 @@ import "slick-carousel/slick/slick-theme.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 const router = createBrowserRouter([{ path: '/', element: <HomePage />, errorElement: <ErrorComponent /> },
-{ path: '/about', element: <About />, errorElement: <ErrorComponent /> }
+{ path: '/about', element: <About />, errorElement: <ErrorComponent /> }, { path: '/projects', element: <Projects />, errorElement: <ErrorComponent /> }, { path: '/contact', element: <Contact />, errorElement: <ErrorComponent /> }
 ])
 
 function App() {

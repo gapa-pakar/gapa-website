@@ -18,7 +18,7 @@ export default function ResponsiveMenu(props) {
                     <FaUserCircle size={50} />
                     <div>
                         <h1>שלום,</h1>
-                        <h1 className='text-sm text-slate-500'>מישהו מגניב שנכנס לאתר של גפ"ה</h1>
+                        <h1 className='text-sm text-slate-500'>איך נוכל לעזור?</h1>
                     </div>
                 </div>
                 {/* Menu Section */}

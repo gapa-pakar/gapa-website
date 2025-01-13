@@ -5,6 +5,7 @@ import { CgWebsite } from "react-icons/cg";
 import { FaCameraRetro } from 'react-icons/fa'
 import { GiNotebook } from 'react-icons/gi'
 import { SlNote } from 'react-icons/sl'
+import { Link } from 'react-router-dom'
 
 const skillsData = [
     {
@@ -75,7 +76,7 @@ export default function Services() {
                     data-aos-delay="900"
                     data-aos-offset="0"  
                     className='text-center mt-4 sm:mt-8'>
-                        <button className='btn-primary'>הסבר נוסף</button>
+                        <button className='btn-primary'><Link to='/projects'>פרוייקטים</Link></button>
                     </div>
                 </div>
             </div>

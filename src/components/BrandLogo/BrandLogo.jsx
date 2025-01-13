@@ -14,11 +14,11 @@ export default function BrandLogo() {
         <>
             <div className='dark:bg-gray-900 dark:text-white sm:mt-0 lg:mt-10'>
                 <div className='container py-12'>
-                    <h1 data-aos="fade-up" className='text-center font-bold'>מכינים תוצרים לכלל החטיבה</h1>
+                    <h1 data-aos="fade-up" className='text-center font-bold'>הכנת תוצרים לכלל חטיבת החילוץ וההדרכה</h1>
                     <div data-aos="fade-up"
                     data-aos-delay="300"
                     className='flex flex-wrap items-center 
-                    justify-center gap-3 py-6 md:px-32'>
+                    justify-center gap-3 py-6 px-10 md:px-32'>
                         <img src={Brand1} alt="" className='w-10' />
                         <img src={Brand2} alt="" className='w-10' />
                         <img src={Brand3} alt="" className='w-10' />

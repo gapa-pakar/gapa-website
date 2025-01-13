@@ -62,15 +62,15 @@ export default function Footer() {
                 <div className='container'>
                     <div className='grid md:grid-cols-3 py-5'>
                         {/* Company Details */}
-                        <div className='py-8 px-4'>
+                        {/* <div className='py-8 px-4'>
                             <h1 className='sm:text-3xl text-xl font-bold 
-                    sm:text-left text-justify mb-3 flex items-center 
-                    gap-3'>Digital Agency</h1>
+                                sm:text-left text-justify mb-3 flex items-center 
+                                gap-3'>Digital Agency</h1>
                             <p className='text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse diam justo, placerat dapibus ligula nec, condimentum laoreet est. Nam bibendum vestibulum neque eu ultricies. Curabitur accumsan accumsan erat, a scelerisque urna. Cras gravida leo magna, ornare iaculis augue dapibus id.{" "}
                             </p>
-                            <br />
+                            <br /> */}
                             {/* Social Handle */}
-                            <div className='flex items-center gap-4 mt-6'>
+                            {/* <div className='flex items-center gap-4 mt-6'>
                                 <a href='#'>
                                     <FaInstagram className='text-2xl
                             hover:text-primary duration-300'/>
@@ -84,12 +84,12 @@ export default function Footer() {
                             hover:text-primary duration-300'/>
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
                         {/* Links Section */}
-                        <div className='grid grid-cols-2 sm:grid-cols-3
-                        col-span-2 md:pl-10'>
+                        {/* <div className='grid grid-cols-2 sm:grid-cols-3
+                        col-span-2 md:pl-10'> */}
                             {/* First Col */}
-                            <div>
+                            {/* <div>
                                 <div className='py-8 px-4'>
                                     <h1 className='text-xl font-bold mb-3'>Company</h1>
                                     <ul className='space-y-3'>
@@ -106,9 +106,9 @@ export default function Footer() {
                                         })}
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                             {/* Second Col */}
-                            <div>
+                            {/* <div>
                                 <div className='py-8 px-4'>
                                     <h1 className='text-xl font-bold mb-3'>Help</h1>
                                     <ul className='space-y-3'>
@@ -125,10 +125,10 @@ export default function Footer() {
                                         })}
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                             {/* Third Col */}
                             <div>
-                                <div className='py-8 px-4'>
+                                {/* <div className='py-8 px-4'>
                                     <h1 className='text-xl font-bold mb-3'>Resources</h1>
                                     <ul className='space-y-3'>
                                         {ResourcesLinks.map((link) => {
@@ -143,12 +143,12 @@ export default function Footer() {
                                             )
                                         })}
                                     </ul>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            {/* </div> */}
         </>
     )
 }

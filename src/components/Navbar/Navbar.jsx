@@ -19,7 +19,7 @@ export const MenuLinks = [
     },
     {
         id: 3,
-        name: "פרוייקטים",
+        name: "תוצרי הדרכה",
         link: "/projects"
     }
 ]
@@ -59,7 +59,7 @@ export default function Navbar() {
                                         );
                                     })
                                 }
-                                <button className='btn-primary'>צרו קשר</button>
+                                <button className='btn-primary'><Link to='/contact'>צרו קשר</Link></button>
                                 <DarkMode></DarkMode>
                             </ul>
                         </div>
