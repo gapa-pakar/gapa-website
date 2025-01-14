@@ -14,7 +14,7 @@ export default function Projects() {
     // Simulate an API call
     setTimeout(() => {
       setIsLoading(false);
-    }, 4000);
+    }, 5000);
   }, []);
 
   if (isLoading) {

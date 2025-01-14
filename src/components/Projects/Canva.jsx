@@ -48,8 +48,36 @@ const CampusFiles = [
 
 const DevelopTeamFiles = [
   {
-    id: 1,
+    id: 100,
     title: 'פק"לון חניכה מש"קית צפ"ה',
+    description: "למפקד",
+    img: document3Cover,
+    link: document1
+  },
+  {
+    id: 200,
+    title: 'ניסוח מטרות לשנה',
+    description: "למפקד",
+    img: document3Cover,
+    link: document1
+  },
+  {
+    id: 300,
+    title: 'בניית שאלות למבחנים',
+    description: "למפקד",
+    img: document3Cover,
+    link: document1
+  },
+  {
+    id: 400,
+    title: 'פק"לון חניכה למפקד',
+    description: "למפקד",
+    img: document3Cover,
+    link: document1
+  },
+  {
+    id: 500,
+    title: 'פק"לון איתור צרכים',
     description: "למפקד",
     img: document3Cover,
     link: document1
@@ -92,24 +120,25 @@ export default function Canva() {
       </div>
 
       {/* download files */}
-      <div>
+      <div className='pr-10 sm:pr-0'>
         <div className='mt-[10rem] font-bold text-2xl'>קבצים להורדה לשימושכם</div>
         {/* campus */}
         <p className='pt-4 pb-2 font-bold'>קמפוס דיגיטלי</p>
-        <div className='grid grid-col-1 md:grid-cols-2 lg:grid-cols-4'>
+        <div className='grid grid-col-1 md:grid-cols-2 lg:grid-cols-5'>
           {CampusFiles.map((file) => {
             return (
-              <FilesCards file={file}></FilesCards>
+              <FilesCards key={file.id} file={file}></FilesCards>
             )
           })}
         </div>
         <hr className='w-[100%] border-gray-300 border-[2px] my-10'></hr>
+
         {/* DeveloperTeam */}
         <p className='pt-4 pb-2 font-bold'>צוות פיתוח הדרכה (צפ"ה)</p>
-        <div className='grid grid-col-1 md:grid-cols-2 lg:grid-cols-4'>
+        <div className='grid grid-col-1 md:grid-cols-2 lg:grid-cols-5'>
           {DevelopTeamFiles.map((file) => {
             return (
-              <FilesCards file={file}></FilesCards>
+              <FilesCards key={file.id} file={file}></FilesCards>
             )
           })}
         </div>
