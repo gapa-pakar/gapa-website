@@ -15,6 +15,7 @@ import flyer13 from '../../assets/Projects/Canva/13.png'
 import flyer14 from '../../assets/Projects/Canva/14.mp4'
 import flyer15 from '../../assets/Projects/Canva/15.png'
 import flyer16 from '../../assets/Projects/Canva/16.png'
+import flyer17 from '../../assets/Projects/Canva/17.png'
 
 export default function Canva() {
   return (
@@ -26,31 +27,28 @@ export default function Canva() {
             <img src={flyer2} />
             <img src={flyer16} className='gallery-img max-h-[10rem] sm:max-h-[10rem]' />
             <img src={flyer9} />
-            <img src={flyer13} className='gallery-img max-h-[10rem] sm:max-h-[40rem]' />
           </div>
           <div className="column">
             <img src={flyer5} />
             <video src={flyer8} className='pt-[5px]' controls autoPlay muted loop></video>
-            <img src={flyer15} className='gallery-img max-h-[10rem] sm:max-h-[12rem]' />
           </div>
           <div className='column'>
             <video src={flyer1} className='pt-[5px]' controls autoPlay muted loop></video>
             <img src={flyer10} />
-            <img src={flyer6} />
             <img src={flyer12} />
             <img src={flyer11} />
+            <img src={flyer4} />
           </div>
           <div className='column'>
             <img src={flyer3} />
             <video src={flyer14} className='gallery-img pt-[5px] max-h-[10rem] sm:max-h-[20rem]' controls autoPlay muted loop></video>
             <img src={flyer7} />
-            <img src={flyer5} />
+            <img src={flyer15} className='gallery-img max-h-[10rem] sm:max-h-[12rem]' />
+            
           </div>
-          <div className='column'>
-            <img src={flyer4} />
+          <div className='column'>  
             <img src={flyer9} />
-            <img src={flyer4} />
-            <img src={flyer3} />
+            <img src={flyer5} />
           </div>
         </div>
       </div>
