@@ -7,6 +7,7 @@ import Footer from './Footer/Footer'
 import Loading from './Loading'
 
 export default function Projects() {
+
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -18,7 +19,7 @@ export default function Projects() {
 
   if (isLoading) {
     return <Loading />;
-  } 
+  }
 
   return (
     <div className='dark:bg-black'>

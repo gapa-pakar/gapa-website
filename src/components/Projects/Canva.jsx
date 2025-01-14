@@ -1,21 +1,60 @@
 import React from 'react'
+import FilesCards from './FilesCards'
+
+// flyers gallery
 import flyer1 from '../../assets/Projects/Canva/1.mp4'
 import flyer2 from '../../assets/Projects/Canva/2.png'
 import flyer3 from '../../assets/Projects/Canva/3.png'
 import flyer4 from '../../assets/Projects/Canva/4.png'
 import flyer5 from '../../assets/Projects/Canva/5.png'
 import flyer6 from '../../assets/Projects/Canva/6.png'
-import flyer7 from '../../assets/Projects/Canva/7.png'
-import flyer8 from '../../assets/Projects/Canva/8.mp4'
+import flyer7 from '../../assets/Projects/Canva/7.mp4'
+import flyer8 from '../../assets/Projects/Canva/8.png'
 import flyer9 from '../../assets/Projects/Canva/9.png'
 import flyer10 from '../../assets/Projects/Canva/10.png'
 import flyer11 from '../../assets/Projects/Canva/11.png'
-import flyer12 from '../../assets/Projects/Canva/12.png'
+import flyer12 from '../../assets/Projects/Canva/12.mp4'
 import flyer13 from '../../assets/Projects/Canva/13.png'
-import flyer14 from '../../assets/Projects/Canva/14.mp4'
-import flyer15 from '../../assets/Projects/Canva/15.png'
-import flyer16 from '../../assets/Projects/Canva/16.png'
-import flyer17 from '../../assets/Projects/Canva/17.png'
+import flyer14 from '../../assets/Projects/Canva/14.png'
+
+// documents
+import document1 from '../../assets/Projects/Canva/document1.pdf'
+import document2 from '../../assets/Projects/Canva/document2.pdf'
+
+// documents cover img
+import document1Cover from '../../assets/Projects/Canva/document1.png'
+import document2Cover from '../../assets/Projects/Canva/document2.png'
+import document3Cover from '../../assets/Projects/Canva/document3.png'
+
+
+const CampusFiles = [
+  {
+    id: 1,
+    title: 'פק"לון עבודה קמפוס דיגיטלי לחניך',
+    description: "יחלעחעיעכעיכעיככ ייחעחיעיח חילחיחל",
+    img: document1Cover,
+    link: document1,
+    linkTitle: "פקלון קמפוס דיגיטלי לחניך"
+  },
+  {
+    id: 2,
+    title: 'פק"לון עבודה קמפוס דיגיטלי למפקד',
+    description: "ילחחיעכיעכ עחיעחיעח עחעחע",
+    img: document2Cover,
+    link: document2,
+    linkTitle: "פקלון קמפוס דיגיטלי למפקד"
+  }
+]
+
+const DevelopTeamFiles = [
+  {
+    id: 1,
+    title: 'פק"לון חניכה מש"קית צפ"ה',
+    description: "למפקד",
+    img: document3Cover,
+    link: document1
+  }
+]
 
 export default function Canva() {
   return (
@@ -25,31 +64,54 @@ export default function Canva() {
         <div className='row'>
           <div className="column">
             <img src={flyer2} />
-            <img src={flyer16} className='gallery-img max-h-[10rem] sm:max-h-[10rem]' />
-            <img src={flyer9} />
+            <img src={flyer14} className='gallery-img max-h-[10rem] sm:max-h-[10rem]' />
+            <img src={flyer8} />
           </div>
           <div className="column">
             <img src={flyer5} />
-            <video src={flyer8} className='pt-[5px]' controls autoPlay muted loop></video>
+            <video src={flyer7} className='pt-[5px]' controls autoPlay muted loop></video>
           </div>
           <div className='column'>
             <video src={flyer1} className='pt-[5px]' controls autoPlay muted loop></video>
-            <img src={flyer10} />
-            <img src={flyer12} />
+            <img src={flyer9} />
             <img src={flyer11} />
+            <img src={flyer10} />
             <img src={flyer4} />
           </div>
           <div className='column'>
             <img src={flyer3} />
-            <video src={flyer14} className='gallery-img pt-[5px] max-h-[10rem] sm:max-h-[20rem]' controls autoPlay muted loop></video>
-            <img src={flyer7} />
-            <img src={flyer15} className='gallery-img max-h-[10rem] sm:max-h-[12rem]' />
-            
+            <video src={flyer12} className='gallery-img pt-[5px] max-h-[10rem] sm:max-h-[20rem]' controls autoPlay muted loop></video>
+            <img src={flyer6} />
+            <img src={flyer13} className='gallery-img max-h-[10rem] sm:max-h-[12rem]' />
           </div>
-          <div className='column'>  
-            <img src={flyer9} />
+          <div className='column'>
+            <img src={flyer8} />
             <img src={flyer5} />
           </div>
+        </div>
+      </div>
+
+      {/* download files */}
+      <div>
+        <div className='mt-[10rem] font-bold text-2xl'>קבצים להורדה לשימושכם</div>
+        {/* campus */}
+        <p className='pt-4 pb-2 font-bold'>קמפוס דיגיטלי</p>
+        <div className='grid grid-col-1 md:grid-cols-2 lg:grid-cols-4'>
+          {CampusFiles.map((file) => {
+            return (
+              <FilesCards file={file}></FilesCards>
+            )
+          })}
+        </div>
+        <hr className='w-[100%] border-gray-300 border-[2px] my-10'></hr>
+        {/* DeveloperTeam */}
+        <p className='pt-4 pb-2 font-bold'>צוות פיתוח הדרכה (צפ"ה)</p>
+        <div className='grid grid-col-1 md:grid-cols-2 lg:grid-cols-4'>
+          {DevelopTeamFiles.map((file) => {
+            return (
+              <FilesCards file={file}></FilesCards>
+            )
+          })}
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function BlogCard(props) {
 
@@ -19,8 +20,8 @@ export default function BlogCard(props) {
                         <h1 className='line-clamp-1 text-2xl font-semibold'>{blog.title}</h1>
                         <h1 className='line-champ-4 text-gray-500 text-sm'>{blog.description}</h1>
                         <div className='flex justify-end pr-4 text-gray-500'>
-                            <a href={link} target={page ? "_blank" : ""}><FaArrowLeft className='group-hover:text-primary
-                            group-hover:translate-x-2 cursor-pointer duration-300'/></a>
+                            <Link to={link} target={page ? "_blank" : ""}><FaArrowLeft className='group-hover:text-primary
+                            group-hover:translate-x-2 cursor-pointer duration-300'/></Link>
                         </div>
                     </div>
                 </div>

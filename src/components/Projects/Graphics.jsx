@@ -40,36 +40,36 @@ export default function Graphics() {
                         data-aos-delay="300"
                         className='flex flex-wrap items-center 
                             justify-center gap-1 md:px-32 dark:bg-gray-800 bg-gray-200 rounded-xl py-4'>
-                        <img src={symbol1} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol2} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol3} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol4} alt="" className='w-[4rem] sm:w-[8rem]' />
-                        <img src={symbol5} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol6} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol7} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol8} alt="" className='w-[4rem] sm:w-[8rem]' />
-                        <img src={symbol9} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol10} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol11} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol12} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol13} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol14} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol15} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol16} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol17} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol18} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol19} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol20} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol21} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol22} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol23} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol24} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol25} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol26} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol27} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol28} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol29} alt="" className='w-[4rem] sm:w-[12rem]' />
-                        <img src={symbol30} alt="" className='w-[4rem] sm:w-[12rem]' />
+                        <img src={symbol1} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol2} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol3} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol4} alt="" className='w-[4rem] md:w-[8rem]' />
+                        <img src={symbol5} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol6} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol7} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol8} alt="" className='w-[4rem] md:w-[8rem]' />
+                        <img src={symbol9} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol10} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol11} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol12} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol13} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol14} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol15} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol16} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol17} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol18} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol19} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol20} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol21} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol22} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol23} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol24} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol25} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol26} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol27} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol28} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol29} alt="" className='w-[4rem] md:w-[12rem]' />
+                        <img src={symbol30} alt="" className='w-[4rem] md:w-[12rem]' />
                     </div>
                 </div>
             </div>
