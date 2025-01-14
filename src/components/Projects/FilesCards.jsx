@@ -9,8 +9,8 @@ export default function FilesCards(props) {
 
     return (
         <div key={file.id}>
-            <div className='bg-white dark:bg-gray-900 dark:text-white md:w-[19rem] h-[14rem] ml-8 mb-5 flex rounded-xl'>
-                <img src={file.img} className='h-[14rem] w-[10rem] rounded-xl'></img>
+            <div className='bg-white dark:bg-gray-900 dark:text-white md:w-[19rem] h-[15rem] ml-8 mb-5 flex rounded-xl'>
+                <img src={file.img} className='h-[15rem] w-[10rem] rounded-xl'></img>
                 <div className='flex flex-col text-center px-4 items-center'>
                     <div className='pt-4 font-bold'>{file.title}</div>
                     <p className='pt-2 text-[0.8rem]'>{file.description}</p>

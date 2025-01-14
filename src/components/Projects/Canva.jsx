@@ -31,7 +31,7 @@ const CampusFiles = [
   {
     id: 1,
     title: 'פק"לון עבודה קמפוס דיגיטלי לחניך',
-    description: "יחלעחעיעכעיכעיככ ייחעחיעיח חילחיחל",
+    description: 'פק"לון המסביר על מערכת הקמפוס הדיגילי למפקד',
     img: document1Cover,
     link: document1,
     linkTitle: "פקלון קמפוס דיגיטלי לחניך"
@@ -39,7 +39,7 @@ const CampusFiles = [
   {
     id: 2,
     title: 'פק"לון עבודה קמפוס דיגיטלי למפקד',
-    description: "ילחחיעכיעכ עחיעחיעח עחעחע",
+    description: 'פק"לון המסביר על מערכת הקמפוס הדיגיטלי לחייל',
     img: document2Cover,
     link: document2,
     linkTitle: "פקלון קמפוס דיגיטלי למפקד"
