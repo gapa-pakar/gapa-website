@@ -7,9 +7,23 @@ import Services from './Services/Services'
 import Testimonials from './Testimonials/Testimonials'
 import Blogs from './Blogs/Blogs'
 import Footer from './Footer/Footer'
+import Loading from './Loading'
 
 
 export default function HomePage() {
+
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        // Simulate an API call
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 1000);
+    }, []);
+
+    if (isLoading) {
+        return <Loading />;
+    }
 
     return (
         <>

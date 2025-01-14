@@ -120,8 +120,9 @@ export default function Canva() {
       </div>
 
       {/* download files */}
-      <div className='pr-10 sm:pr-0'>
-        <div className='mt-[10rem] font-bold text-2xl'>קבצים להורדה לשימושכם</div>
+      <div className='pr-10 sm:pr-0 dark:text-white'>
+      <hr className='w-[100%] border-gray-300 dark:border-gray-700 border-[2px] my-10 mt-[10rem]'></hr>
+        <div className='mt-[2rem] font-bold text-2xl'>קבצים להורדה לשימושכם</div>
         {/* campus */}
         <p className='pt-4 pb-2 font-bold'>קמפוס דיגיטלי</p>
         <div className='grid grid-col-1 md:grid-cols-2 lg:grid-cols-5'>
@@ -131,7 +132,7 @@ export default function Canva() {
             )
           })}
         </div>
-        <hr className='w-[100%] border-gray-300 border-[2px] my-10'></hr>
+        <hr className='w-[100%] border-gray-300 dark:border-gray-700 border-[2px] my-10'></hr>
 
         {/* DeveloperTeam */}
         <p className='pt-4 pb-2 font-bold'>צוות פיתוח הדרכה (צפ"ה)</p>
