@@ -4,7 +4,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 export default function BlogCard(props) {
 
-    const { blog, link, page, element } = props;
+    const { blog, link, page } = props;
 
     return (
         <>

@@ -52,7 +52,7 @@ export default function Blogs() {
                     lg:grid-cols-3 gap-6'>
                         {BlogsData.map((blog) => {
                             return (
-                                <BlogCard key={blog.id} link={blog.link} page={false} element={blog.element} blog={blog} />
+                                <BlogCard key={blog.id} link={blog.link} page={false} blog={blog} />
                             )
                         })}
                     </div>

@@ -34,6 +34,7 @@ export default function ResponsiveMenu(props) {
                                 </li>)
                             })
                         }
+                        <button className='btn-primary'><Link to='/contact'>צרו קשר</Link></button>
                     </ul>
                 </nav>
             </div>
