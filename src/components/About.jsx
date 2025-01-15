@@ -8,8 +8,8 @@ export default function About() {
     return (
         <div className='overflow-x-hidden bg-white dark:bg-black dark:text-white duration-300 font-heebo'>
             <Navbar></Navbar>
-            <div className='space-y-5 order-2 sm:order-1 m-5 flex text-center justify-center'>
-                <h1 data-aos="fade-up" className='text-4xl sm:text-5xl font-extrabold leading-8'>גוף פיתוח הדרכה{" "}
+            <div className='space-y-5 order-2 sm:order-1 mt-7 md:m-5 flex text-center justify-center'>
+                <h1 data-aos="fade-up" className='text-2xl sm:text-4xl font-bold leading-8'>גוף פיתוח הדרכה{" "}
                     <br />
                     <span className='text-primary leading-8'>חטיבת החילוץ</span></h1>
             </div>

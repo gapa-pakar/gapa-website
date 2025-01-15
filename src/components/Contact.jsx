@@ -60,8 +60,8 @@ export default function Contact() {
             <div className='flex justify-center'>
                 <div className='dark:text-white sm:mt-0 lg:mt-10 mb-[15rem] flex flex-col md:flex-row'>
                     <div className='container py-12 flex flex-col justify-center items-center md:block'>
-                        <h1 data-aos="zoom-in-down" className='text-right font-bold text-3xl pb-2 text-primary'>צרו איתנו קשר</h1>
-                        <p data-aos="zoom-in-down" className='text-right font-bold text-4md pb-10'>אנחנו כאן לסייע ולעזור בכל דבר ולענות לכל צורך</p>
+                        <h1 data-aos="zoom-in-down" className='text-right font-bold text-2xl md:text-3xl pb-2 text-primary'>צרו איתנו קשר</h1>
+                        <p data-aos="zoom-in-down" className='text-right font-bold text-[0.9rem] md:text-[1rem] pb-10'>אנחנו כאן לסייע ולעזור בכל דבר ולענות לכל צורך</p>
                         <div className='grid grid-col-1 gap-6 md:bg-gray-200 md:dark:bg-gray-700 md:p-10 md:pl-[24rem] rounded-xl'>
                             {Forms.map((form) => {
                                 return (
@@ -83,10 +83,10 @@ export default function Contact() {
                         {Contacts.map((form) => {
                             return (
                                 <div key={form.id}>
-                                    <div className='flex flex-col text-center items-center justify-center mb-5 bg-gray-200 dark:bg-gray-700 rounded-xl w-[20rem] h-[10rem]'>
+                                    <div className='flex flex-col text-center items-center justify-center mb-5 bg-gray-200 dark:bg-gray-700 rounded-xl w-[15rem] md:w-[20rem] h-[8rem] md:h-[10rem]'>
                                         {form.id === "phone" ? <FaPhoneAlt className='ml-2 size-7' /> : form.id === "whatsapp" ? <IoLogoWhatsapp className='ml-2 size-7' /> : <IoMdMail className='ml-2 size-7' />}
-                                        <h1 className='mt-2 font-bold text-[1.2rem]'>{form.title}</h1>
-                                        <p>{form.description}<span className='mr-2'>{form.id === "phone" ? "050-545-2889" : ""}</span></p>
+                                        <h1 className='mt-2 font-bold md:text-[1.2rem]'>{form.title}</h1>
+                                        <p className='text-[0.9rem] md:text-[1rem]'>{form.description}<span className='mr-2'>{form.id === "phone" ? "050-545-2889" : ""}</span></p>
                                     </div>
                                 </div>
                             )

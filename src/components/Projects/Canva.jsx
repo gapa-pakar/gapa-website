@@ -56,7 +56,7 @@ const DevelopTeamFiles = [
   },
   {
     id: 200,
-    title: 'ניסוח מטרות לשנה',
+    title: 'ניסוח מטרות',
     description: "למפקד",
     img: document3Cover,
     link: document1
@@ -121,7 +121,7 @@ export default function Canva() {
 
       {/* download files */}
       <div className='pr-10 sm:pr-0 dark:text-white'>
-      <hr className='w-[100%] border-gray-300 dark:border-gray-700 border-[2px] my-10 mt-[10rem]'></hr>
+      <hr className=' w-[80%] md:w-[100%] border-gray-300 dark:border-gray-700 border-[2px] my-10 mt-[5rem] md:mt-[10rem]'></hr>
         <div className='mt-[2rem] font-bold text-2xl'>קבצים להורדה לשימושכם</div>
         {/* campus */}
         <p className='pt-4 pb-2 font-bold'>קמפוס דיגיטלי</p>
@@ -132,7 +132,7 @@ export default function Canva() {
             )
           })}
         </div>
-        <hr className='w-[100%] border-gray-300 dark:border-gray-700 border-[2px] my-10'></hr>
+        <hr className='md:w-[100%] w-[80%] border-gray-300 dark:border-gray-700 border-[2px] my-10'></hr>
 
         {/* DeveloperTeam */}
         <p className='pt-4 pb-2 font-bold'>צוות פיתוח הדרכה (צפ"ה)</p>

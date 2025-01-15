@@ -76,7 +76,7 @@ export default function Services() {
                     data-aos-delay="900"
                     data-aos-offset="0"  
                     className='text-center mt-4 sm:mt-8'>
-                        <button className='btn-primary'><Link to='/projects'>פרוייקטים</Link></button>
+                        <button className='btn-primary'><Link to='/projects'>תוצרי הדרכה</Link></button>
                     </div>
                 </div>
             </div>
