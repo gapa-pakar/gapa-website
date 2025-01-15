@@ -8,18 +8,18 @@ import Loading from './Loading'
 
 export default function Projects() {
 
-  // const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
-  // useEffect(() => {
-  //   // Simulate an API call
-  //   setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 5000);
-  // }, []);
+  useEffect(() => {
+    // Simulate an API call
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
 
-  // if (isLoading) {
-  //   return <Loading />;
-  // }
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <div className='dark:bg-black'>
