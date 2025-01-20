@@ -44,12 +44,14 @@ const Contacts = [
     {
         id: "whatsapp",
         title: "שלחו לנו הודעה",
-        description: "לחצו על הקישור"
+        description: "לחצו על הקישור",
+        link: "https://wa.me/505452889"
     },
     {
         id: "mail",
         title: "כתבו לנו במייל",
         description: "gapa.rescue@gmail.com",
+        link: "https://mail.google.com/mail/?view=cm&fs=1&to=gapa.rescue@gmail.com"
     }
 ]
 
@@ -92,7 +94,7 @@ export default function Contact() {
                                     <div className='flex flex-col text-center items-center justify-center mb-5 bg-gray-200 dark:bg-gray-700 rounded-xl w-[15rem] md:w-[20rem] h-[8rem] md:h-[10rem]'>
                                         {form.id === "phone" ? <FaPhoneAlt className='ml-2 size-6 text-primary' /> : form.id === "whatsapp" ? <IoLogoWhatsapp className='ml-2 size-7 text-primary' /> : <IoMdMail className='ml-2 size-7 text-primary' />}
                                         <h1 className='mt-2 font-bold md:text-[1.1rem]'>{form.title}</h1>
-                                        <p className='text-[0.9rem] md:text-[0.9rem] mt-[0.2rem]'>{form.id === "whatsapp" ? <a className='hover:bg-gray-500 duration-300 bg-primary text-white px-2 rounded-md' href='https://wa.me/505452889' target='_blank'>{form.description}</a> : form.description}<span className='mr-2'>{form.id === "phone" ? "050-545-2889" : ""}</span></p>
+                                        <p className='text-[0.9rem] md:text-[0.9rem] mt-[0.2rem]'>{form.id === "phone" ? <span className='mr-2'>050-545-2889</span> : <a className='hover:bg-gray-500 duration-300 bg-primary text-white px-2 rounded-md' href={form.link} target='_blank'>{form.description}</a>}</p>
                                     </div>
                                 </div>
                             )
