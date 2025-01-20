@@ -32,7 +32,7 @@ export default function Projects() {
         <Canva></Canva>
       </section>
       {/* <hr className='w-[100%] border-black border-[1px]'></hr> */}
-      <section id='lomda'>
+      <section id='lomdot'>
         <Lomdot></Lomdot>
       </section>
       <Footer></Footer>

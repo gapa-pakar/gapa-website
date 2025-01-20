@@ -5,6 +5,8 @@ import Footer from './Footer/Footer'
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
+import { FaArrowLeft } from 'react-icons/fa';
+import { Link } from 'react-router-dom'
 
 const Forms = [
     {
@@ -66,14 +68,18 @@ export default function Contact() {
                             {Forms.map((form) => {
                                 return (
                                     <div key={form.id}>
-                                        <a href={form.link} data-aos="fade-up" data-aos-delay={form.aosDelay}>
-                                            <div className='bg-gray-200 md:bg-gray-300 dark:bg-gray-800 p-2 rounded-[20rem] flex flex-row items-center w-[20rem] sm:w-[24rem]'>
+                                        <div data-aos="fade-up" data-aos-delay={form.aosDelay}>
+                                            <div className='bg-gray-200 md:bg-gray-300 dark:bg-gray-800 p-2 rounded-[20rem] flex flex-row items-center w-[21rem] sm:w-[26rem]'>
                                                 <div className='bg-primary rounded-[20rem] w-10 h-10 sm:w-12 sm:h-12 flex justify-center items-center'>
                                                     <img src={formImg} className='h-[1.2rem] sm:h-[1.8rem]'></img>
                                                 </div>
                                                 <p className='pr-3 sm:pr-5 font-bold text-[0.8rem] sm:text-[1rem]'>{form.title}</p>
+                                                <div className='flex justify-end pr-4 text-gray-500'>
+                                                    <a href={form.link} target="_blank"><FaArrowLeft className='hover:text-primary
+                                                    hover:-translate-x-2 cursor-pointer duration-300'/></a>
+                                                </div>
                                             </div>
-                                        </a>
+                                        </div>
                                     </div>
                                 )
                             })}
@@ -84,9 +90,9 @@ export default function Contact() {
                             return (
                                 <div key={form.id}>
                                     <div className='flex flex-col text-center items-center justify-center mb-5 bg-gray-200 dark:bg-gray-700 rounded-xl w-[15rem] md:w-[20rem] h-[8rem] md:h-[10rem]'>
-                                        {form.id === "phone" ? <FaPhoneAlt className='ml-2 size-7' /> : form.id === "whatsapp" ? <IoLogoWhatsapp className='ml-2 size-7' /> : <IoMdMail className='ml-2 size-7' />}
-                                        <h1 className='mt-2 font-bold md:text-[1.2rem]'>{form.title}</h1>
-                                        <p className='text-[0.9rem] md:text-[1rem]'>{form.description}<span className='mr-2'>{form.id === "phone" ? "050-545-2889" : ""}</span></p>
+                                        {form.id === "phone" ? <FaPhoneAlt className='ml-2 size-6 text-primary' /> : form.id === "whatsapp" ? <IoLogoWhatsapp className='ml-2 size-7 text-primary' /> : <IoMdMail className='ml-2 size-7 text-primary' />}
+                                        <h1 className='mt-2 font-bold md:text-[1.1rem]'>{form.title}</h1>
+                                        <p className='text-[0.9rem] md:text-[0.9rem] mt-[0.2rem]'>{form.id === "whatsapp" ? <a className='hover:bg-gray-500 duration-300 bg-primary text-white px-2 rounded-md' href='https://wa.me/050-545-2889' target='_blank'>{form.description}</a> : form.description}<span className='mr-2'>{form.id === "phone" ? "050-545-2889" : ""}</span></p>
                                     </div>
                                 </div>
                             )
