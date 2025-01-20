@@ -18,6 +18,20 @@ body {
     font-family: 'Heebo';
 }
 
+.text-direction {
+  unicode-bidi: plaintext;
+}
+
+.slick-prev {
+  z-index: 10;
+  margin-right: 3.4rem;
+}
+
+.slick-next {
+  z-index: 10;
+  margin-left: 3.4rem;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -36,6 +50,7 @@ body {
     vertical-align: middle;
     width: 100%;
   }
+
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {

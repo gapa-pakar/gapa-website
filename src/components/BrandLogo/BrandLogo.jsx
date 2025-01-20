@@ -12,7 +12,7 @@ import Brand8 from '../../assets/Symbols/8.avif'
 export default function BrandLogo() {
     return (
         <>
-            <div className='dark:bg-gray-900 dark:text-white sm:mt-0 lg:mt-10'>
+            <div className='dark:bg-gray-900 dark:text-white mt-10'>
                 <div className='container py-12'>
                     <h1 data-aos="fade-up" className='text-center font-bold'>הכנת תוצרים לכלל חטיבת החילוץ וההדרכה</h1>
                     <div data-aos="fade-up"

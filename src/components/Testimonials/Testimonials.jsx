@@ -7,19 +7,19 @@ const testimonialData = [
     {
         id: 1,
         name: "-- ג'ורג' קורוס --",
-        text: '".טכנולוגיה אינה מחליפה מורים גדולים, אך טכנולוגיה בידיים של מורים גדולים יכולה להוביל לשינוי"',        
+        text: '"טכנולוגיה אינה מחליפה מורים גדולים, אך טכנולוגיה בידיים של מורים גדולים יכולה להוביל לשינוי."',        
         img: quotes
     },
     {
         id: 2,
         name: "-- ג'ניפר פלמינג --",
-        text: '".הוראה בעידן האינטרנט פירושה שעלינו ללמד את המיומנויות של מחר היום"',
+        text: '"הוראה בעידן האינטרנט פירושה שעלינו ללמד את המיומנויות של מחר היום."',
         img: quotes 
     },
     {
         id: 3,
         name: "-- קוני מלמד --",
-        text: '".אחד התחומים החשובים ביותר שאנו יכולים לפתח כאנשי מקצוע הוא יכולת גישה ושיתוף ידע"',
+        text: '"אחד התחומים החשובים ביותר שאנו יכולים לפתח כאנשי מקצוע הוא יכולת גישה ושיתוף ידע."',
         img: quotes
     }
 ]
@@ -48,12 +48,12 @@ export default function Testimonials() {
                                             <div className='flex flex-col sm:flex-row
                                             gap-5 md:gap-40 p-4 mx-5 rounded-xl 
                                             dark:bg-gray-800 relative'>
-                                                <img src={img} alt='' className='block mx-auto h-[300px] w-full
+                                                <img src={img} alt='' className='block mx-auto sm:h-[300px] w-full
                                                 xl:w-[600px] object-cover'/>
-                                                <div className='space-y-4'>
-                                                    <p className='font-bold '>{text}</p>
+                                                <div className='space-y-4 m-5'>
+                                                    <p className='font-bold text-direction'>{text}</p>
                                                     <h1 className='text-gray-500 text-black/80 
-                                                dark:text-white/80 x:pr-40 absolute right-0'>{name}</h1>
+                                                dark:text-white/80 x:pr-40'>{name}</h1>
                                                 </div>
                                                 <p className='text-black/10 text-[12rem]
                                                 font-serif absolute bottom-0 right-0'>,,</p>
