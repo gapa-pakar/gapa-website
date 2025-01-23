@@ -16,6 +16,8 @@ import flyer11 from '../../assets/Projects/Canva/11.png'
 import flyer12 from '../../assets/Projects/Canva/12.mp4'
 import flyer13 from '../../assets/Projects/Canva/13.png'
 import flyer14 from '../../assets/Projects/Canva/14.png'
+import flyer15 from '../../assets/Projects/Canva/15.png'
+import flyer16 from '../../assets/Projects/Canva/16.png'
 
 // documents
 import document1 from '../../assets/Projects/Canva/document1.pdf'
@@ -96,8 +98,9 @@ export default function Canva() {
             <img src={flyer8} />
           </div>
           <div className="column">
-            <img src={flyer5} />
             <video src={flyer7} className='pt-[5px]' controls autoPlay muted loop></video>
+            <img src={flyer15} />
+
           </div>
           <div className='column'>
             <video src={flyer1} className='pt-[5px]' controls autoPlay muted loop></video>
@@ -113,15 +116,15 @@ export default function Canva() {
             <img src={flyer13} className='gallery-img max-h-[10rem] sm:max-h-[12rem]' />
           </div>
           <div className='column'>
-            <img src={flyer8} />
             <img src={flyer5} />
+            <img src={flyer16} />
           </div>
         </div>
       </div>
 
       {/* download files */}
       <div className='pr-10 sm:pr-0 dark:text-white'>
-      <hr className=' w-[80%] md:w-[100%] border-gray-300 dark:border-gray-700 border-[2px] my-10 mt-[5rem] md:mt-[10rem]'></hr>
+        <hr className=' w-[80%] md:w-[100%] border-gray-300 dark:border-gray-700 border-[2px] my-10 mt-[5rem] md:mt-[10rem]'></hr>
         <div className='mt-[2rem] font-bold text-2xl'>קבצים להורדה לשימושכם</div>
         {/* campus */}
         <p className='pt-4 pb-2 font-bold'>קמפוס דיגיטלי</p>
