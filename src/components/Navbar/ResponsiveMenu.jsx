@@ -41,7 +41,7 @@ export default function ResponsiveMenu(props) {
             {/* Footer Section */}
             <div>
                 <h1>Made with ❤ by{" "}
-                    <a href='https://react-icons.github.io/react-icons/search/#q=sun'>Gapa</a>{" "}
+                    <a href=''>Gapa</a>{" "}
                 </h1>
             </div>
         </div>
