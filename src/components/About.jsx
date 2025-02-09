@@ -35,14 +35,14 @@ export default function About() {
                 </div>
                 <div className='flex flex-col md:flex-row justify-center items-center m-10 bg-gray-200 dark:bg-gray-900 p-[2rem] md:p-[4rem] rounded-xl'>
                     <div className='md:ml-[6rem] mb-10 md:mb-0 flex flex-col bg-white dark:bg-gray-700 p-10 rounded-xl'>
-                        <div className='font-bold text-2xl text-primary'>מי אנחנו?</div>
-                        <div className='text-[1.1rem] font-medium mt-2 leading-8'>אנחנו אחראים לפיתוח תהליכים, מערכים וכלים המיועדים להדרכה ולמידה.<br></br>האגף מתמקד ביישום ויצירת תוכניות הכשרה המסייע בייעול ושיפור הכישורים וקידום מטרות הלמידה.</div>
-                        <div className='text-primary font-bold mt-4 text-[1.2rem]'>תפקידי גוף פיתוח ההדרכה כוללים:</div>
+                        <div className='font-bold text-xl md:text-2xl text-primary'>מי אנחנו?</div>
+                        <div className='md:text-[1.1rem] text-[0.8rem] font-medium mt-2 leading-8'>אנחנו אחראים לפיתוח תהליכים, מערכים וכלים המיועדים להדרכה ולמידה.<br></br>האגף מתמקד ביישום ויצירת תוכניות הכשרה המסייע בייעול ושיפור הכישורים וקידום מטרות הלמידה.</div>
+                        <div className='text-primary font-bold mt-4 md:text-[1.2rem]'>תפקידי גוף פיתוח ההדרכה כוללים:</div>
                         <ol className='mt-2 list-decimal mr-4 font-semibold'>
                             {
                                 info.map((element, index) => {
                                     return (
-                                        <li key={index} className='mb-4'>
+                                        <li key={index} className='mb-4 text-[0.8rem] md:text-[1rem] leading-6'>
                                             <div>{element.title}</div>
                                             <div className='font-normal'>{element.description}</div>
                                         </li>
