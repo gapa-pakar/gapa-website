@@ -33,8 +33,8 @@ export default function About() {
                     <span className='text-primary leading-8'>חטיבת החילוץ</span> */}
                     </h1>
                 </div>
-                <div className='flex flex-col sm:flex-row justify-center items-center m-10 bg-gray-200 dark:bg-gray-900 p-[2rem] sm:p-[4rem] rounded-xl'>
-                    <div className='sm:ml-[6rem] mb-10 sm:mb-0 flex flex-col bg-white dark:bg-gray-700 p-10 rounded-xl'>
+                <div className='flex flex-col md:flex-row justify-center items-center m-10 bg-gray-200 dark:bg-gray-900 p-[2rem] md:p-[4rem] rounded-xl'>
+                    <div className='md:ml-[6rem] mb-10 md:mb-0 flex flex-col bg-white dark:bg-gray-700 p-10 rounded-xl'>
                         <div className='font-bold text-2xl text-primary'>מי אנחנו?</div>
                         <div className='text-[1.1rem] font-medium mt-2 leading-8'>אנחנו אחראים לפיתוח תהליכים, מערכים וכלים המיועדים להדרכה ולמידה.<br></br>האגף מתמקד ביישום ויצירת תוכניות הכשרה המסייע בייעול ושיפור הכישורים וקידום מטרות הלמידה.</div>
                         <div className='text-primary font-bold mt-4 text-[1.2rem]'>תפקידי גוף פיתוח ההדרכה כוללים:</div>
