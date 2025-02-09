@@ -14,9 +14,9 @@
     src: url("assets/fonts/Heebo-VariableFont_wght.ttf")
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
     font-family: 'Heebo';

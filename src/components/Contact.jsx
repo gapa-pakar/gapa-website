@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
-import formImg from '../assets/forms.png'
+import formImg from '../assets/forms.svg'
 import Footer from './Footer/Footer'
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io5";
@@ -64,7 +64,7 @@ export default function Contact() {
                 <div className='dark:text-white sm:mt-0 lg:mt-10 mb-[15rem] flex flex-col md:flex-row'>
                     <div className='container py-12 flex flex-col justify-center items-center md:block'>
                         <h1 data-aos="zoom-in-down" className='text-right font-bold text-2xl md:text-3xl pb-2 text-primary'>צרו איתנו קשר</h1>
-                        <p data-aos="zoom-in-down" className='text-right font-bold text-[0.9rem] md:text-[1rem] pb-10'>אנחנו כאן לסייע ולעזור בכל דבר ולענות לכל צורך</p>
+                        <p data-aos="zoom-in-down" className='text-right font-bold text-[0.9rem] md:text-[1rem] pb-10'>אנחנו כאן כדי לעזור במציאת פתרונות ההדרכה המותאמים לצורך שלכם.<br></br></p>
                         <div className='grid grid-col-1 gap-6 md:bg-gray-200 md:dark:bg-gray-700 md:p-10 md:pl-[24rem] rounded-xl'>
                             {Forms.map((form) => {
                                 return (

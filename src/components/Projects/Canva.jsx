@@ -138,14 +138,14 @@ export default function Canva() {
         <hr className='md:w-[100%] w-[80%] border-gray-300 dark:border-gray-700 border-[2px] my-10'></hr>
 
         {/* DeveloperTeam */}
-        <p className='pt-4 pb-2 font-bold'>צוות פיתוח הדרכה (צפ"ה)</p>
+        {/* <p className='pt-4 pb-2 font-bold'>צוות פיתוח הדרכה (צפ"ה)</p>
         <div className='grid grid-col-1 md:grid-cols-2 lg:grid-cols-5'>
           {DevelopTeamFiles.map((file) => {
             return (
               <FilesCards key={file.id} file={file}></FilesCards>
             )
           })}
-        </div>
+        </div> */}
       </div>
     </div>
   )
