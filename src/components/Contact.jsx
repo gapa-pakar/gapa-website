@@ -65,12 +65,12 @@ export default function Contact() {
                     <div className='container py-12 flex flex-col justify-center items-center md:block'>
                         <h1 data-aos="zoom-in-down" className='text-right font-bold text-2xl md:text-3xl pb-2 text-primary'>צרו איתנו קשר</h1>
                         <p data-aos="zoom-in-down" className='text-right font-bold text-[0.9rem] md:text-[1rem] pb-10'>אנחנו כאן כדי לעזור במציאת פתרונות ההדרכה המותאמים לצורך שלכם.<br></br></p>
-                        <div className='grid grid-col-1 gap-6 md:bg-gray-200 md:dark:bg-gray-700 md:p-10 md:pl-[24rem] rounded-xl'>
+                        <div className='grid grid-col-1 gap-6 bg-gray-200 md:dark:bg-gray-700 py-5 px-2 md:p-10 md:pl-[24rem] rounded-xl'>
                             {Forms.map((form) => {
                                 return (
                                     <div key={form.id}>
                                         <div data-aos="fade-up" data-aos-delay={form.aosDelay}>
-                                            <div className='bg-gray-200 md:bg-gray-300 dark:bg-gray-800 p-2 rounded-[20rem] flex flex-row items-center w-[21rem] sm:w-[26rem]'>
+                                            <div className='bg-white dark:bg-gray-800 p-2 rounded-[20rem] flex flex-row items-center w-[21rem] sm:w-[26rem]'>
                                                 <div className='bg-primary rounded-[20rem] w-10 h-10 sm:w-12 sm:h-12 flex justify-center items-center'>
                                                     <img src={formImg} className='h-[1.2rem] sm:h-[1.8rem]'></img>
                                                 </div>
