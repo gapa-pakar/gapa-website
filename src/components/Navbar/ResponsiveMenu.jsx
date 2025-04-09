@@ -1,8 +1,13 @@
 
-import React from 'react'
+import React, { lazy } from 'react'
 import { FaUserCircle } from 'react-icons/fa'
 import { MenuLinks } from './Navbar'
 import { Link } from 'react-router-dom'
+
+const HomePage = lazy(() => import('../HomePage'));
+const AboutPage = lazy(() => import('../About'));
+const ProjectsPage = lazy(() => import('../Projects'));
+const ContactPage = lazy(() => import('../Contact'));
 
 export default function ResponsiveMenu(props) {
     const { showMenu } = props
@@ -25,16 +30,21 @@ export default function ResponsiveMenu(props) {
                 <nav className='mt-10'>
                     <ul className='space-y-1 text-lg font-extrabold'>
                         {
-                            MenuLinks.map(({ id, name, link }) => {
-                                return (<li key={id}>
-                                    <Link to={link} className='mb-5 inline-block'>
-                                        {" "}
-                                        {name}
-                                    </Link>
-                                </li>)
+                            MenuLinks.map(({ id, name, link, loading }) => {
+                                return (
+                                    <li key={id}>
+                                        <Link
+                                            to={link}
+                                            className={id !== 4 ? 'mb-5 inline-block' : 'btn-primary'}
+                                            onPointerEnter={loading.preload}
+                                        >
+                                            {" "}
+                                            {name}
+                                        </Link>
+                                    </li>)
                             })
                         }
-                        <button className='btn-primary'><Link to='/contact'>צרו קשר</Link></button>
+                        {/* <button className='btn-primary'><Link to='/contact'>צרו קשר</Link></button> */}
                     </ul>
                 </nav>
             </div>

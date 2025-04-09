@@ -13,17 +13,19 @@ import Loading from './Loading'
 export default function HomePage() {
 
     const [isLoading, setIsLoading] = useState(true);
+    const [hash, setHash] = useState("");
 
     useEffect(() => {
         // Simulate an API call
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 1000);
+        // setTimeout(() => {
+        //     setIsLoading(false);
+        // }, 1000);
+        console.log("hello")
     }, []);
 
-    if (isLoading) {
-        return <Loading />;
-    }
+    // if (isLoading) {
+    //     return <Loading />;
+    // }
 
     return (
         <>

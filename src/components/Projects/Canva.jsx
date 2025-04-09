@@ -2,13 +2,13 @@ import React from 'react'
 import FilesCards from './FilesCards'
 
 // flyers gallery
-import flyer1 from '../../assets/Projects/Canva/1.mp4'
+import flyer1 from '../../assets/Projects/Canva/1.png'
 import flyer2 from '../../assets/Projects/Canva/2.png'
 import flyer3 from '../../assets/Projects/Canva/3.png'
-import flyer4 from '../../assets/Projects/Canva/4.png'
+import flyer4 from '../../assets/Projects/Canva/4.mp4'
 import flyer5 from '../../assets/Projects/Canva/5.png'
-import flyer6 from '../../assets/Projects/Canva/6.png'
-import flyer7 from '../../assets/Projects/Canva/7.mp4'
+import flyer6 from '../../assets/Projects/Canva/6.mp4'
+import flyer7 from '../../assets/Projects/Canva/7.png'
 import flyer8 from '../../assets/Projects/Canva/8.png'
 import flyer9 from '../../assets/Projects/Canva/9.png'
 import flyer10 from '../../assets/Projects/Canva/10.png'
@@ -19,72 +19,30 @@ import flyer14 from '../../assets/Projects/Canva/14.png'
 import flyer15 from '../../assets/Projects/Canva/15.png'
 import flyer16 from '../../assets/Projects/Canva/16.png'
 
-// documents
-import document1 from '../../assets/Projects/Canva/document1.pdf'
-import document2 from '../../assets/Projects/Canva/document2.pdf'
+const canvaProjects = {
+  images: [
+    [flyer1, flyer2, flyer3],
+    [flyer4, flyer5],
+    [flyer6, flyer7, flyer8, flyer9, flyer10],
+    [flyer11, flyer12, flyer13, flyer14],
+    [flyer15, flyer16]
+  ],
 
-// documents cover img
-import document1Cover from '../../assets/Projects/Canva/document1.png'
-import document2Cover from '../../assets/Projects/Canva/document2.png'
-import document3Cover from '../../assets/Projects/Canva/document3.png'
+  type: {
+    img: [flyer1, flyer2, flyer3, flyer5, flyer7, flyer8, flyer9, flyer10, flyer11, flyer13, flyer14, flyer15, flyer16],
+    video: [flyer4, flyer6, flyer12]
+  },
+
+  class: [
+    ['', '', ''],
+    ['w-full h-[40.9vh] object-cover', ''],
+    ['', '', '', 'w-full h-[17.5vh] object-cover', ''],
+    ['', '', '', 'w-full h-[19.4vh] object-cover'],
+    ['w-full h-[40.2vh] object-cover', '']
+  ],
+}
 
 
-const CampusFiles = [
-  {
-    id: 1,
-    title: 'פק"לון עבודה קמפוס דיגיטלי לחניך',
-    description: 'פק"לון המסביר על מערכת הקמפוס הדיגיטלי לחייל',
-    img: document1Cover,
-    link: document1,
-    linkTitle: "פקלון קמפוס דיגיטלי לחניך"
-  },
-  {
-    id: 2,
-    title: 'פק"לון עבודה קמפוס דיגיטלי למפקד/ת',
-    description: 'פק"לון המסביר על מערכת הקמפוס הדיגיטלי למפקד',
-    img: document2Cover,
-    link: document2,
-    linkTitle: "פקלון קמפוס דיגיטלי למפקד"
-  }
-]
-
-const DevelopTeamFiles = [
-  {
-    id: 100,
-    title: 'פק"לון חניכה מש"קית צפ"ה',
-    description: "למפקד",
-    img: document3Cover,
-    link: document1
-  },
-  {
-    id: 200,
-    title: 'ניסוח מטרות',
-    description: "למפקד",
-    img: document3Cover,
-    link: document1
-  },
-  {
-    id: 300,
-    title: 'בניית שאלות למבחנים',
-    description: "למפקד",
-    img: document3Cover,
-    link: document1
-  },
-  {
-    id: 400,
-    title: 'פק"לון חניכה למפקד',
-    description: "למפקד",
-    img: document3Cover,
-    link: document1
-  },
-  {
-    id: 500,
-    title: 'פק"לון איתור צרכים',
-    description: "למפקד",
-    img: document3Cover,
-    link: document1
-  }
-]
 
 export default function Canva() {
   return (
@@ -92,60 +50,23 @@ export default function Canva() {
       <h1 data-aos="fade-up" className='text-center font-bold text-4xl pt-20 pb-10 dark:text-white text-primary'>עיצוב ועריכה בתוכנת Canva</h1>
       <div className='m-0 px-5 sm:px-20 bp-20 box-border'>
         <div className='row'>
-          <div className="column">
-            <img src={flyer2} />
-            <img src={flyer14} className='gallery-img max-h-[10rem] sm:max-h-[10rem]' />
-            <img src={flyer8} />
-          </div>
-          <div className="column">
-            <video src={flyer7} className='pt-[5px]' controls autoPlay muted loop></video>
-            <img src={flyer15} />
-
-          </div>
-          <div className='column'>
-            <video src={flyer1} className='pt-[5px]' controls autoPlay muted loop></video>
-            <img src={flyer9} />
-            <img src={flyer11} />
-            <img src={flyer10} />
-            <img src={flyer4} />
-          </div>
-          <div className='column'>
-            <img src={flyer3} />
-            <video src={flyer12} className='gallery-img pt-[5px] max-h-[10rem] sm:max-h-[20rem]' controls autoPlay muted loop></video>
-            <img src={flyer6} />
-            <img src={flyer13} className='gallery-img max-h-[10rem] sm:max-h-[12rem]' />
-          </div>
-          <div className='column'>
-            <img src={flyer5} />
-            <img src={flyer16} />
-          </div>
+          {
+            canvaProjects.images.map((item, index) => (
+              <div className='column' key={index}>
+                {
+                  item.map((img, i) => {
+                    return (
+                      <div key={i}>
+                        {canvaProjects.type.img.includes(img) && <img src={img} className={canvaProjects.class[index][i]} />}
+                        {canvaProjects.type.video.includes(img) && <video src={img} type='video/mp4' preload='true' autoPlay muted loop className={`pt-[5px] ${canvaProjects.class[index][i]}`} ></video>}
+                      </div>
+                    )
+                  })
+                }
+              </div>
+            ))
+          }
         </div>
-      </div>
-
-      {/* download files */}
-      <div className='pr-10 sm:pr-0 dark:text-white'>
-        <hr className=' w-[80%] md:w-[100%] border-gray-300 dark:border-gray-700 border-[2px] my-10 mt-[5rem] md:mt-[10rem]'></hr>
-        <div className='mt-[2rem] font-bold text-2xl'>קבצים להורדה לשימושכם</div>
-        {/* campus */}
-        <p className='pt-4 pb-2 font-bold'>קמפוס דיגיטלי</p>
-        <div className='grid grid-col-1 md:grid-cols-2 lg:grid-cols-5'>
-          {CampusFiles.map((file) => {
-            return (
-              <FilesCards key={file.id} file={file}></FilesCards>
-            )
-          })}
-        </div>
-        <hr className='md:w-[100%] w-[80%] border-gray-300 dark:border-gray-700 border-[2px] my-10'></hr>
-
-        {/* DeveloperTeam */}
-        {/* <p className='pt-4 pb-2 font-bold'>צוות פיתוח הדרכה (צפ"ה)</p>
-        <div className='grid grid-col-1 md:grid-cols-2 lg:grid-cols-5'>
-          {DevelopTeamFiles.map((file) => {
-            return (
-              <FilesCards key={file.id} file={file}></FilesCards>
-            )
-          })}
-        </div> */}
       </div>
     </div>
   )

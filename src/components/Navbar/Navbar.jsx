@@ -1,32 +1,47 @@
 
-import React, { useState } from 'react'
+import React, { lazy, useState } from 'react'
 import Logo from "../../assets/logo.png"
 import DarkMode from './DarkMode'
 import ResponsiveMenu from './ResponsiveMenu'
 import { HiMenuAlt1, HiMenuAlt3 } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
 
+const HomePage = lazy(() => import('../HomePage'));
+const AboutPage = lazy(() => import('../About'));
+const ProjectsPage = lazy(() => import('../Projects'));
+const ContactPage = lazy(() => import('../Contact'));
+
 export const MenuLinks = [
     {
         id: 1,
         name: "בית",
         link: "/",
+        loading: HomePage
     },
     {
         id: 2,
         name: "מי אנחנו?",
         link: "/about",
+        loading: AboutPage
     },
     {
         id: 3,
         name: "תוצרי הדרכה",
-        link: "/projects"
+        link: "/projects",
+        loading: ProjectsPage
+    },
+    {
+        id: 4,
+        name: "צרו קשר",
+        link: "/contact",
+        loading: ContactPage
     }
 ]
 
 export default function Navbar() {
 
     const [showMenu, setShowMenu] = useState(false);
+
 
     const toggleMenu = () => {
         setShowMenu(!showMenu);
@@ -48,34 +63,42 @@ export default function Navbar() {
                         <div className='hidden md:block'>
                             <ul className='flex items-center gap-5'>
                                 {
-                                    MenuLinks.map(({ id, name, link }) => {
+                                    MenuLinks.map(({ id, name, link, loading }) => {
                                         return (
                                             <li key={id} className='cursor-pointer py-4'>
-                                                <Link to={link} className='text-l font-bold 
-                                                hover:text-primary py-2 
-                                                hover:border-b-2 
-                                                hover:border-primary'>{name}</Link>
+                                                <Link
+                                                    to={link}
+                                                    className={id !== 4 ? 'text-l font-bold hover:text-primary py-2 hover:border-b-2 hover:border-primary' : 'btn-primary'}
+                                                    onMouseEnter={loading.preload}
+                                                >
+                                                    {name}
+                                                </Link>
                                             </li>
                                         );
                                     })
                                 }
-                                <button className='btn-primary'><Link to='/contact'>צרו קשר</Link></button>
                                 <DarkMode></DarkMode>
                             </ul>
                         </div>
+
                         {/* Mobile View */}
                         <div className='flex items-center gap-4 md:hidden'>
                             <DarkMode />
-                            {showMenu ? (<HiMenuAlt1 onClick={toggleMenu}
-                                className='cursor-pointer text-2xl'
-                            />) : (<HiMenuAlt3 onClick={toggleMenu}
-                                className='cursor-pointer text-2xl'
-                            />)}
+                            {showMenu ? (
+                                <HiMenuAlt1 onClick={toggleMenu}
+                                    className='cursor-pointer text-2xl'
+                                />
+                            ) : (
+                                <HiMenuAlt3 onClick={toggleMenu}
+                                    className='cursor-pointer text-2xl'
+                                />
+                            )}
                         </div>
                     </div>
                 </div>
+                
                 {/* Mobile Menu Section */}
-                <ResponsiveMenu showMenu={showMenu}/>
+                <ResponsiveMenu showMenu={showMenu} />
             </nav>
         </>
     )

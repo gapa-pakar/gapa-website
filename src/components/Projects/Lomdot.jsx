@@ -60,7 +60,7 @@ export default function Lomdot() {
                                     lg:grid-cols-3 gap-6'>
                             {BlogsData.map((blog) => {
                                 return (
-                                    <BlogCard key={blog.id} link={blog.link} page="true" blog={blog} />
+                                    <BlogCard key={blog.id} link={blog.link} page={true} blog={blog} />
                                 )
                             })}
                         </div>

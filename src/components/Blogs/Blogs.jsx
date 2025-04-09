@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import BlogCard from './BlogCard'
 import graphics from '../../assets/graphics.png'
 import canva from '../../assets/canva.png'
@@ -13,7 +13,7 @@ const BlogsData = [
         title: "גרפיקות",
         description: "גרפיקות לסרטוני אנימציה קצרים, עדכון סמלי החטיבה, הכנת סמלים חדשים ועוד.",
         author: "שקד שואן גרפיקאית חטיבת החילוץ",
-        link: "/projects/#graphics",
+        link: "/projects",
         element: "graphics",
         aosDelay: "0"
     },
@@ -23,7 +23,7 @@ const BlogsData = [
         title: "עיצוב ועריכה בתוכנת canva",
         description: 'הכנת כריכות לספרים, פלייארים, פוסטרים, טפטים, פק"לונים, הזמנות לכנסים ועוד.',
         author: "ליאם דיחמט עורך חטיבת החילוץ",
-        link: "/projects/#canva",
+        link: "/projects",
         element: "canva",
         aosDelay: "300"
     },
@@ -33,10 +33,11 @@ const BlogsData = [
         title: "פיתוח לומדות",
         description: "לומדת תעודת זהות חטיבת החילוץ וההדרכה, לומדת כרמל, לומדת רפואת חילוץ ועוד.",
         author: "מפתחות לומדה וכותבות לומדה חטיבת החילוץ",
-        link: "/projects/#lomdot",
+        link: "/projects",
         element: "lomdot",
         aosDelay: "500"
-    }
+    }, 
+
 ]
 
 export default function Blogs() {

@@ -57,25 +57,22 @@ export default function Services() {
                     {/* Card Section */}
                     <div className='grid grid-cols-1 md:grid-cols-2 
                     xl:grid-cols-4 gap-4'>
-                        {skillsData.map((skill) => {
-                            return (
-                                <div data-aos="fade-up" data-aos-delay={skill.aosDelay}
-                                    key={skill.name} className='card space-y-3 
-                                sm:space-y-4 p-4'>
-                                    <div>{skill.icon}</div>
-                                    <h1 className='text-lg font-semibold'>{skill.name}</h1>
-                                    <p className='text-gray-600 dark:text-gray-400'>
-                                        {skill.description}
-                                    </p>
-                                </div>
-                            )
-                        })}
+                        {skillsData.map((skill) => (
+                            <div data-aos="fade-up" data-aos-delay={skill.aosDelay}
+                                key={skill.name} className='card space-y-3 sm:space-y-4 p-4'>
+                                <div>{skill.icon}</div>
+                                <h1 className='text-lg font-semibold'>{skill.name}</h1>
+                                <p className='text-gray-600 dark:text-gray-400'>
+                                    {skill.description}
+                                </p>
+                            </div>
+                        ))}
                     </div>
                     {/* Button Section */}
-                    <div data-aos="fade-up" 
-                    data-aos-delay="900"
-                    data-aos-offset="0"  
-                    className='text-center mt-4 sm:mt-8'>
+                    <div data-aos="fade-up"
+                        data-aos-delay="900"
+                        data-aos-offset="0"
+                        className='text-center mt-4 sm:mt-8'>
                         <button className='btn-primary'><Link to='/projects'>תוצרי הדרכה</Link></button>
                     </div>
                 </div>
