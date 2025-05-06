@@ -4,6 +4,7 @@ import FilesCards from './FilesCards'
 // documents
 import document1 from '../../assets/Projects/Canva/document1.pdf'
 import document2 from '../../assets/Projects/Canva/document2.pdf'
+import document3 from '../../assets/Projects/Canva/document3.pdf'
 
 // documents cover img
 import document1Cover from '../../assets/Projects/Canva/document1.png'
@@ -35,35 +36,7 @@ const DevelopTeamFiles = [
         title: 'פק"לון חניכה מש"קית צפ"ה',
         description: "למפקד",
         img: document3Cover,
-        link: document1
-    },
-    {
-        id: 200,
-        title: 'ניסוח מטרות',
-        description: "למפקד",
-        img: document3Cover,
-        link: document1
-    },
-    {
-        id: 300,
-        title: 'בניית שאלות למבחנים',
-        description: "למפקד",
-        img: document3Cover,
-        link: document1
-    },
-    {
-        id: 400,
-        title: 'פק"לון חניכה למפקד',
-        description: "למפקד",
-        img: document3Cover,
-        link: document1
-    },
-    {
-        id: 500,
-        title: 'פק"לון איתור צרכים',
-        description: "למפקד",
-        img: document3Cover,
-        link: document1
+        link: document3
     }
 ]
 
