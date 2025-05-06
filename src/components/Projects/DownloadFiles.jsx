@@ -33,11 +33,11 @@ const CampusFiles = [
 const DevelopTeamFiles = [
     {
         id: 100,
-        title: 'פק"לון חניכה מש"קית צפ"ה',
-        description: "למפקד",
+        title: 'פק"לון חניכה למפקד/ת',
+        description: 'פק"לון חניכה מש"קית צפ"ה',
         img: document3Cover,
         link: document3,
-        linkTitle: 'פקלון חניכה משקית צפה'
+        linkTitle: 'פקלון חניכה למפקד'
     }
 ]
 
