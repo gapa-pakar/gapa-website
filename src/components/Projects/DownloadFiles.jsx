@@ -36,7 +36,8 @@ const DevelopTeamFiles = [
         title: 'פק"לון חניכה מש"קית צפ"ה',
         description: "למפקד",
         img: document3Cover,
-        link: document3
+        link: document3,
+        linkTitle: 'פקלון חניכה משקית צפה'
     }
 ]
 
